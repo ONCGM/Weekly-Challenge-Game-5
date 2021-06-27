@@ -20,10 +20,10 @@ public class MainMenuController : MonoBehaviour {
         var timeTwo = PlayerPrefs.GetFloat("Time2", 0);
         var timeThree = PlayerPrefs.GetFloat("Time3", 0);
         
-        bestTimeText.text = $"Best Time: {timeOne + timeTwo + timeThree}s" +
-                            $"\nFirst Scene: {timeOne}s" +
-                            $"\nSecond Scene: {timeTwo}s" +
-                            $"\nThird Scene: {timeThree}s";
+        bestTimeText.text = $"Best Time: {(timeOne + timeTwo + timeThree):F}s" +
+                            $"\nFirst Scene: {(timeOne):F}s" +
+                            $"\nSecond Scene: {(timeTwo):F}s" +
+                            $"\nThird Scene: {(timeThree):F}s";
     }
 
     /// <summary>
